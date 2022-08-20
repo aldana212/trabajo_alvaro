@@ -21,11 +21,19 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1000;
     /* background-color: aliceblue; */
 }
 
+.nav_header{
+    height: 70px;
+    /* box-shadow: 1px 0px 10px 0px #AAA; */
+    padding-left: 12px;
+    background: #141414;
+}
+
 .titulo{
-    color: red;
+    color: #1783db;
     font-size: 42px;
 }
 
@@ -34,11 +42,11 @@ header{
     padding: 2px;
     font-size: 21px;
     text-decoration: none;
-    color: #AAA;
+    color: #fff;
 }
 
 .nav a:hover {
-	color: #ffffff;
+	color: #1783db;
     font-size: 30px;
     transition: .1s;
 }
@@ -66,7 +74,8 @@ header{
 .contenedor .texto{
     max-width: 50%;   
     margin-top: 32px;
-    font-size: 25px;   
+    font-size: 25px; 
+    font-weight: 600;  
  }
 
 
@@ -88,21 +97,303 @@ header{
 	color: #000;
 }
 
+.conte_servicio{
+    color: white;
+    margin-top: 20px;
+}
+
 .conte_servi{
     display: flex;
 }
 
-.conte_section1 .titulo2{
+.conte_servicio .titulo2{
     font-size: 23px;
     text-align: center;
+    position: relative;
 }
 
-.servicios {
+.conte_servicio .titulo2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 13%;
+    background: #1783fb;
+}
+
+.conte_servicio .servicios {
+    margin-top: 30px;
+    margin-left: 45px;
+}
+.conte_servicio .servicios h3{
+   margin-left: 35%;
+}
+ 
+.conte_servicio .servicios p{
+    width: 90%;
+    height: 60%;
+    margin-top: 16px;
+}
+  
+
+.conte_servicio .servicios img{
+    margin-top: 30px;
+    width: 90%;
+    height: 60%;
+    transition: all 300ms;
+}
+
+.conte_servicio .servicios img:hover{
+    transform: scale(1.15);
+}
+ 
+
+/* peliculas recomendadas */
+
+.peli_recomendadas{
+    background-color: grey;
+    min-height: 28.8em;
+    margin-top: 50px;
+}
+
+.peli_recomendadas .titulo2{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 32px;
+    position: relative;
+}
+
+.peli_recomendadas .titulo2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 17.8%;
+    background: black;
+}
+
+.conte_pelis{
+    margin-top: 30px;
+    margin-left: 82px;
+    display: flex; 
+}
+
+.conte_pelis .peliculas h3{
+    margin-left: 35px;
+}
+
+.peli_recomendadas .peliculas img{
+    margin-top: 30px;
+    width: 70%;
+    height: 50%;
+    transition: all 300ms;
+}
+
+.peli_recomendadas .peliculas img:hover{
+    transform: scale(1.15);
+}
+ 
+.peli_recomendadas .peliculas p{
+    width: 90%;
+    height: 60%;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* series recomendadas */
+
+.serie_recomendadas{
+    min-height: 25.1em;
+    margin-top: 50px;
+    color: white;
+}
+
+.serie_recomendadas .titulo2{
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+}
+
+.serie_recomendadas .titulo2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 15.7%;
+    background: #1783fb;
+}
+
+
+.conte_serie{
+    margin-top: 30px;
+    margin-left: 82px;
+    display: flex; 
+}
+
+.conte_serie .serie h3{
+    margin-left: 44px;
+}
+
+.serie_recomendadas .serie img{
+    margin-top: 30px;
+    width: 70%;
+    height: 50%;
+    transition: all 300ms;
+}
+
+.serie_recomendadas .serie img:hover{
+    transform: scale(1.15);
+}
+ 
+.serie_recomendadas .serie p{
+    width: 90%;
+    height: 60%;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* libros recomendadas */
+
+.libros_recomendadas{
+    min-height: 29.9em;
+    margin-top: 50px;
+    color: black;
+    background-color: grey;
+}
+
+.libros_recomendadas .titulo2{
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    padding-top: 32px;
+}
+
+.libros_recomendadas .titulo2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 16.1%;
+    background: black;
+}
+
+
+.conte_libros{
+    margin-top: 30px;
+    margin-left: 82px;
+    display: flex; 
+}
+
+.conte_libros .libros h3{
+    margin-left: 44px;
+}
+
+.libros_recomendadas .libros img{
+    margin-top: 30px;
+    width: 70%;
+    height: 50%;
+    transition: all 300ms;
+}
+
+.libros_recomendadas .libros img:hover{
+    transform: scale(1.15);
+}
+ 
+.libros_recomendadas .libros p{
+    width: 90%;
+    height: 60%;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+
+footer{
+    width: 100%;
+    color: white;
+    bottom: 0;
+    left: 0;
     margin-top: 70px;
 }
- 
 
-.servicios img{
-    width: 50%;
+
+
+.footer1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
 }
- 
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+
+}
+
+.colum1 h1{
+    font-size: 20px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 20px;
+
+}
+
+.colum2{
+    max-width: 400px;
+
+}
+
+.colum2 h1{
+    font-size: 22px;
+
+}
+
+.icono{
+    margin-top: 20px;
+    display: flex;
+}
+
+.icono i{
+    font-size: 30px;
+    color: white;
+}
+
+.icono label{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #c7c7c7;
+
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+
+}
+
+
+.icono1{
+    margin-top: 20px;
+    display: flex;
+}
+
+.icono1 i{
+    font-size: 30px;
+}
+
+.icono1 label{
+    margin-left: 20px;
+    margin-top: 10px;
+    max-width: 140px;
+
+}
