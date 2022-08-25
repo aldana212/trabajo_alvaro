@@ -74,9 +74,50 @@ header nav a:hover{
 	0 5px 35px rgb(255, 255, 255);
 }
 
+.casaPapel{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/casaPapel.jpg);
+	background-size: cover;
+}
+
+.strangerThings{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/StrangerThings.jpg);
+	background-size: cover;
+}
+
+.peakyBlinders{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/peakyBlinders.jpg);
+	background-size: cover;
+}
+
+.losBridgerton{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/losBridgerton.jpg);
+	background-size: cover;
+}
+
+.Los100{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/los100.jpg);
+	background-size: cover;
+}
+
+.Eljuegodelcalamar{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/Eljuegodelcalamar.jpg);
+	background-size: cover;
+}
+
+.Elite{
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/elite.png);
+	background-size: cover;
+}
+
+
+
+
+
+
+
 .main .pelicula-principal:hover{
 	transition: 1s;
-	transform: scale(1.05)
+	transform: scale(1.1)
 }
 
 
@@ -107,13 +148,11 @@ header nav a:hover{
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
 	color: #fff;
-	margin-right: 1.25em;
+	margin-left: 1.5em;
 	cursor: pointer;
 	transition: .3s ease all;
 	font-size: 1.12em;
 }
-
-
 
 .pelicula-principal .boton:hover {
 	background: #fff;
