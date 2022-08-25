@@ -258,17 +258,27 @@ header{
     transform: scale(1.15);
 }
  
-.serie_recomendadas .serie p{
-    width: 90%;
-    height: 60%;
-    margin-top: 12px;
-    font-weight: 600;
+.boton1{
+    background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.50em;
+	padding: 15px 40px;
+	color: #fff;
+	margin-right: 70px;
+    margin-left: 40px;
+    margin-top: 23px;
+	cursor: pointer;
+	transition: .6s ease all;
 }
 
+.boton1:hover {
+	background: #fff;
+	color: #000;
+}
 /* libros recomendadas */
 
 .libros_recomendadas{
-    min-height: 29.9em;
+    min-height: 31.1em;
     margin-top: 50px;
     color: black;
     background-color: grey;
@@ -293,7 +303,7 @@ header{
 
 .conte_libros{
     margin-top: 30px;
-    margin-left: 82px;
+    margin-left: 31px;
     display: flex; 
 }
 
@@ -303,7 +313,7 @@ header{
 
 .libros_recomendadas .libros img{
     margin-top: 30px;
-    width: 70%;
+    width: 90%;
     height: 50%;
     transition: all 300ms;
 }
