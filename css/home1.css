@@ -55,7 +55,7 @@ header{
     min-height: 40.62em;
     font-size: 16px;
     background-color: aqua;
-    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../sources/img/img_pagina.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/img_pagina.jpg);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -99,7 +99,8 @@ header{
 
 .conte_servicio{
     color: white;
-    margin-top: 20px;
+    margin-top: 25px;
+    
 }
 
 .conte_servi{
@@ -130,9 +131,11 @@ header{
 }
  
 .conte_servicio .servicios p{
-    width: 90%;
+    width: 80%;
     height: 60%;
+    margin-left: 32px;
     margin-top: 16px;
+    /* background-color: #1783db; */
 }
   
 
