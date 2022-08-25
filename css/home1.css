@@ -100,7 +100,7 @@ header{
 .conte_servicio{
     color: white;
     margin-top: 25px;
-    
+    min-height: 45.2em;    
 }
 
 .conte_servi{
@@ -113,14 +113,14 @@ header{
     position: relative;
 }
 
-.conte_servicio .titulo2::before{
+/* .conte_servicio .titulo2::before{
     content: "";
     position: absolute;
     bottom: 0;
     height: 3px;
     width: 13%;
     background: #1783fb;
-}
+} */
 
 .conte_servicio .servicios {
     margin-top: 30px;
@@ -258,123 +258,219 @@ header{
     transition: box-shadow 300ms;
 }
 
-/* .info__description input:hover{
-    box-shadow: 1px 1px 30px -5px #20202070;
-} */
-
 /* series recomendadas */
 
 .serie_recomendadas{
-    min-height: 30.1em;
-    margin-top: 50px;
-    color: white;
+    max-width: 100%;
+    min-height: 40.1em;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    background-color: #141414;
 }
 
 .serie_recomendadas .titulo2{
-    font-size: 23px;
     text-align: center;
-    position: relative;
+    color: white;
+    font-size: 33px;
+    margin-top: 12px;
 }
-
-.serie_recomendadas .titulo2::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 3px;
-    width: 15.7%;
-    background: #1783fb;
-}
-
 
 .conte_serie{
-    margin-top: 30px;
-    margin-left: 32px;
-    display: flex; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #141414;
 }
 
-.conte_serie .serie h3{
-    margin-left: 35px;
-}
 
-.serie_recomendadas .serie img{
-    margin-top: 30px;
-    width: 90%;
-    height: 50%;
+.serie{
+    width: 250px;
+    position: relative;
+    margin-top: 150px;
+    font-family: 'Poppins', sans-serif;
     transition: all 300ms;
-}
-.serie_recomendadas .serie img:hover{
-    transform: scale(1.15);
-}
- 
-.boton1{
-    background: rgba(0,0,0, 0.5);
-	border: none;
-	border-radius: 0.50em;
-	padding: 15px 40px;
-	color: #fff;
-	margin-right: 70px;
-    margin-left: 40px;
-    margin-top: 23px;
-	cursor: pointer;
-	transition: .6s ease all;
+    border-radius: 20px;
 }
 
-.boton1:hover {
-	background: #fff;
-	color: #000;
+.serie img{
+    width: 250px;
+    height: 220px;
+    position: relative;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 300ms;
+    border-radius: 20px;
 }
+
+.serie:hover .info__description{
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.serie:hover .icon{
+    margin-top: -100px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.icon{
+    width: 100%;
+    height: 220px;
+    background: #EFF3F5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.info__description{
+    width: 100%;
+    height: 220px;
+    background: #EFF3F5;
+    padding: 20px;
+    margin-top: -220px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.info__description p{
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    /* display: -moz-box;
+    display: box; */
+    -webkit-box-orient: vertical;
+    /* -moz-box-orient: vertical;
+    box-orient: vertical; */
+    -webkit-line-clamp: 5;
+    /* line-clamp: 5; */
+    overflow: hidden;
+}
+
+.info__description input{
+    margin-top: 20px;
+    padding: 10px 40px;
+    margin-left: 44px;
+    background: #2196f3;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    transition: box-shadow 300ms;
+}
+
+
 /* libros recomendadas */
 
+
 .libros_recomendadas{
-    min-height: 31.1em;
-    margin-top: 50px;
-    color: black;
-    background-color: grey;
+    max-width: 100%;
+    min-height: 40.1em;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    background-color: #1783db;
 }
 
 .libros_recomendadas .titulo2{
-    font-size: 23px;
     text-align: center;
-    position: relative;
-    padding-top: 32px;
+    font-size: 33px;
+    margin-top: 12px;
 }
-
-.libros_recomendadas .titulo2::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 3px;
-    width: 16.1%;
-    background: black;
-}
-
 
 .conte_libros{
-    margin-top: 30px;
-    margin-left: 32px;
-    display: flex; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #1783db;
 }
 
-.conte_libros .libros h3{
-    margin-left: 44px;
-}
 
-.libros_recomendadas .libros img{
-    margin-top: 30px;
-    width: 90%;
-    height: 50%;
+.libros{
+    width: 250px;
+    position: relative;
+    margin-top: 150px;
+    font-family: 'Poppins', sans-serif;
     transition: all 300ms;
+    border-radius: 20px;
 }
 
-.libros_recomendadas .libros img:hover{
-    transform: scale(1.15);
+.libros img{
+    width: 250px;
+    height: 220px;
+    position: relative;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 300ms;
+    border-radius: 20px;
 }
- 
-.libros_recomendadas .libros p{
-    width: 90%;
-    height: 60%;
-    margin-top: 12px;
-    font-weight: 600;
+
+.libros:hover .info__description{
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.libros:hover .icon{
+    margin-top: -100px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.icon{
+    width: 100%;
+    height: 220px;
+    background: #EFF3F5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.info__description{
+    width: 100%;
+    height: 220px;
+    background: #EFF3F5;
+    padding: 20px;
+    margin-top: -220px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.info__description p{
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    /* display: -moz-box;
+    display: box; */
+    -webkit-box-orient: vertical;
+    /* -moz-box-orient: vertical;
+    box-orient: vertical; */
+    -webkit-line-clamp: 5;
+    /* line-clamp: 5; */
+    overflow: hidden;
+}
+
+.info__description input{
+    margin-top: 20px;
+    padding: 10px 40px;
+    margin-left: 44px;
+    background: #2196f3;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    transition: box-shadow 300ms;
 }
 
 
