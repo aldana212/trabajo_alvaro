@@ -155,7 +155,7 @@ header{
 
 .peli_recomendadas{
     background-color: grey;
-    min-height: 28.8em;
+    min-height: 35.8em;
     margin-top: 50px;
 }
 
@@ -177,17 +177,17 @@ header{
 
 .conte_pelis{
     margin-top: 30px;
-    margin-left: 82px;
+    margin-left: 32px;
     display: flex; 
 }
 
 .conte_pelis .peliculas h3{
-    margin-left: 35px;
+    margin-left: 5px;
 }
 
 .peli_recomendadas .peliculas img{
     margin-top: 30px;
-    width: 70%;
+    width: 90%;
     height: 50%;
     transition: all 300ms;
 }
@@ -196,17 +196,28 @@ header{
     transform: scale(1.15);
 }
  
-.peli_recomendadas .peliculas p{
-    width: 90%;
-    height: 60%;
-    margin-top: 12px;
-    font-weight: 600;
+.boton1{
+    background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.50em;
+	padding: 15px 40px;
+	color: #fff;
+	margin-right: 70px;
+    margin-left: 40px;
+    margin-top: 23px;
+	cursor: pointer;
+	transition: .6s ease all;
+}
+
+.boton1:hover {
+	background: #fff;
+	color: #000;
 }
 
 /* series recomendadas */
 
 .serie_recomendadas{
-    min-height: 25.1em;
+    min-height: 30.1em;
     margin-top: 50px;
     color: white;
 }
@@ -229,21 +240,20 @@ header{
 
 .conte_serie{
     margin-top: 30px;
-    margin-left: 82px;
+    margin-left: 32px;
     display: flex; 
 }
 
 .conte_serie .serie h3{
-    margin-left: 44px;
+    margin-left: 35px;
 }
 
 .serie_recomendadas .serie img{
     margin-top: 30px;
-    width: 70%;
+    width: 90%;
     height: 50%;
     transition: all 300ms;
 }
-
 .serie_recomendadas .serie img:hover{
     transform: scale(1.15);
 }
