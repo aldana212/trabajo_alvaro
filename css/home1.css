@@ -175,7 +175,6 @@ header{
     background-color: #1783db;
 }
 
-
 .pelicula{
     width: 250px;
     position: relative;
@@ -536,7 +535,6 @@ footer{
     margin-top: 10px;
     margin-left: 10px;
     color: #c7c7c7;
-
 }
 
 .colum3{
@@ -545,9 +543,7 @@ footer{
 
 .colum3 h1{
     font-size: 22px;
-
 }
-
 
 .icono1{
     margin-top: 20px;
@@ -562,5 +558,4 @@ footer{
     margin-left: 20px;
     margin-top: 10px;
     max-width: 140px;
-
 }
