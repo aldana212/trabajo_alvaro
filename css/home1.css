@@ -19,6 +19,7 @@ body{
     position: fixed;
     z-index: 1000;
     background-color: #141414;
+
     border-end-start-radius: 25px;
     border-end-end-radius: 25px;
     transition: 1s;
