@@ -19,7 +19,6 @@ body{
     position: fixed;
     z-index: 1000;
     background-color: #141414;
-    border-bottom: 1px solid #000;
     border-end-start-radius: 25px;
     border-end-end-radius: 25px;
     transition: 1s;
@@ -35,6 +34,12 @@ body{
 .titulo{
     color: #1783db;
     font-size: 42px;
+    margin-left: 16px;
+}
+
+header .titulo:hover{
+	transition: 0.8s;
+	transform: scale(1.1);
 }
 
 .nav a{
@@ -49,7 +54,7 @@ body{
 	color: #fff;
     border-bottom: 2px solid #1783db;
     font-size: 30px;
-    transition: .1s;
+    transition: 0.5s;
 }
 
 .conte_section{
