@@ -243,10 +243,10 @@ header .titulo:hover{
     overflow: hidden;
 }
 
-.info__description .boton{
+.info__description .botonp{
     margin-top: 10px;
     padding: 10px 40px;
-    margin-left: 44px;
+    margin-left: 58px;
     background: #2196f3;
     color: white;
     font-weight: 500;
@@ -258,7 +258,7 @@ header .titulo:hover{
     transition: box-shadow 300ms;
 }
 
-.info__description .boton1{
+.info__description .boton1p{
     margin-top: 5px;
     padding: 10px 40px;
     margin-left: 28px;
@@ -365,10 +365,10 @@ header .titulo:hover{
     overflow: hidden;
 }
 
-.info__description .boton{
+.info__description .botons{
     margin-top: 10px;
     padding: 10px 40px;
-    margin-left: 44px;
+    margin-left: 58px;
     background: #2196f3;
     color: white;
     font-weight: 500;
@@ -380,7 +380,7 @@ header .titulo:hover{
     transition: box-shadow 300ms;
 }
 
-.info__description .boton1{
+.info__description .boton1s{
     margin-top: 5px;
     padding: 10px 40px;
     margin-left: 28px;
@@ -487,10 +487,10 @@ header .titulo:hover{
     /* line-clamp: 5; */
     overflow: hidden;
 }
-.info__description .boton{
+/* .info__description .botonl{
     margin-top: 10px;
     padding: 10px 40px;
-    margin-left: 44px;
+    margin-left: 58px;
     background: #2196f3;
     color: white;
     font-weight: 500;
@@ -500,10 +500,10 @@ header .titulo:hover{
     border-radius: 20px;
     box-shadow: 1px 1px 30px -5px #20202049;
     transition: box-shadow 300ms;
-}
+} */
 
-.info__description .boton1{
-    margin-top: 5px;
+.info__description .boton1l{
+    margin-top: 19px;
     padding: 10px 40px;
     margin-left: 28px;
     background: #2196f3;
