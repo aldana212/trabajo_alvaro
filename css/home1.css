@@ -132,8 +132,10 @@ header .titulo:hover{
 .movies{
     height: 50vh; 
     width: 100%;
-    margin-left: 22px;
-    transform: translateY(60%);
+    /* margin-left: 22px;
+    transform: translateY(60%); */
+    margin-left: 8px;
+    transform: translateY(40%);
     color: #fff;
  }
  

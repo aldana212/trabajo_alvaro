@@ -116,8 +116,8 @@ const input = document.getElementById("buscar");
 //funcion mostrar
 
 function mostra_buscador(){
-  // buscador.style.top="10.1%";
-  buscador.style.top="17.8%";
+  buscador.style.top="10.1%";
+  // buscador.style.top="17.8%";
   portada.style.display="block";
   input.focus();
 }
