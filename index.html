@@ -16,15 +16,34 @@
     <header>
       <div class="conte_header" id="header">
          <h1 class="titulo">Espacio Virtual</h1>
+         <div class="icono_buscar">
+                <i class="bi bi-search"id="icono"><span>Buscar....</span></i>
+          </div>
 
-        <div class="nav">
-        <!-- <a href="">inicio</a> -->
-        <a href="Peliculas.html">peliculas</a>
-        <a href="Series.html">series</a>
-        <a href="">libros</a>
-       </div>
+            <div class="nav">
+                <a href="Peliculas.html">peliculas</a>
+                <a href="Series.html">series</a>
+                <a href="">libros</a>
+           </div>
       </div>
     </header>
+
+<section>
+    <div class="buscador" id="buscador">
+        <input type="text" placeholder="Buscar.." id="buscar">
+   </div>
+   
+   <div class="portada_busqueda" id="portada">
+        <div class="movies" id="movies">
+            <!--
+            - movies grid
+            -->
+            <div class="movies-grid" id="peliculas">
+            </div>
+        </div>
+   </div>
+</section>
+
     <section>
        <div class="conte_section">
         <div class="contenedor"> 
@@ -44,7 +63,7 @@
       <div class="conte_servicio">
          <h3 class="titulo2">Nuestros Sevicios</h3>
          <div class="conte_servi">
-         <div class="servicios">
+         <div class="servicios" id="servicios">
            <h3>Peliculas</h3>
            <img src="img/pelicula.jpg" alt="">
            <p>Una película es toda obra audiovisual fijada en cualquier medio o soporte, cuyo desarrollo se define como un trabajo de creación, producción,
@@ -71,8 +90,8 @@
 
     <!-- peliculas recomendadas -->
 
-    <section>
-      <div class="pelicu_recomendadas">
+    <section id="pelicula">
+      <div class="pelicu_recomendadas" >
         <h3 class="titulo2">Peliculas recomendadas</h3>
         <div class="container_peli">            
             <div class="pelicula">
@@ -361,5 +380,6 @@
 </footer>
 
     <script src="js/js1.js"></script>
+    <script src="js/buscador.js"></script>
 </body>
 </html>

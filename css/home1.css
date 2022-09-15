@@ -12,17 +12,24 @@ body{
 .conte_header{
     width: 100%;
     height: 100px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 11;
     background-color: #141414;
-
     border-end-start-radius: 25px;
     border-end-end-radius: 25px;
     transition: 1s;
+}
+
+.conte_header .icono_buscar {
+border-bottom: 2px solid #1783db;
+}
+
+.conte_header .icono_buscar span{
+    margin: 20px;
 }
 
 .nav_header{
@@ -58,6 +65,201 @@ header .titulo:hover{
     transition: 0.5s;
 }
 
+.icono_buscar i{
+    margin-right: 52px;
+    font-size: 22px;
+    color: #EFF3F5;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.icono_buscar i:hover{
+    color: #1783db;
+}
+
+/* buscador oculto */
+.buscador{
+    position: absolute;
+    /* background-color: #000; */
+    /* background-color:rgba(0, 0, 0, .50); */
+    top: -14.4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11px;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    transition: all 600ms;
+    position: fixed;
+}
+
+
+.buscador input{
+    width: 40vw;
+    height:20px;
+    border: none;
+    border-radius: 7px;
+    padding: 9px;
+    z-index: 1000;
+    font-size: 17px;
+    background-color: #141414;
+    color: white;
+    border: 2px solid  #1783db;
+}
+
+.buscador input:focus{
+    border: 4px solid  #1783db;
+}
+
+.buscador input::placeholder{
+    color: white;
+}
+
+/* peliculas al momento de buscar */
+
+.portada_busqueda{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: all 400ms;
+    z-index: 100;
+}
+
+.movies{
+    height: 50vh; 
+    width: 100%;
+    margin-left: 22px;
+    transform: translateY(60%);
+    color: #fff;
+ }
+ 
+ .movies-grid {
+   display: grid;
+ /* Esta palabra clave nos ayuda a decirle al navegador que inserte el número de columnas o filas que sea necesario para rellenar el espacio.  */
+   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+   gap: 30px;
+ }
+ 
+ .movie-card {
+   --scale: 0.8;
+   
+   cursor: pointer;
+ }
+ 
+ .movie-card .card-head {
+   position: relative;
+   height: 220px;
+   border-radius: 15px;
+   margin-bottom: 19%;
+   overflow: hidden;
+ }
+ 
+ .card-head img{
+     width: 100%;
+     height: 100%;
+ }
+ 
+ 
+ .movie-card:hover .card-img { 
+     transform: scale(1.1); 
+ }
+ 
+ .movie-card .card-overlay {
+   position: absolute;
+   inset: 0;
+   opacity: 0;
+   /* permite dar el desenfoque */
+   backdrop-filter: blur(15px);
+ }
+ 
+ 
+     .movie-card:hover .card-overlay { 
+         opacity: 1; 
+     }
+ 
+ .movie-card .bookmark, .movie-card .rating {
+   position: absolute;
+   top: 15px;
+   padding: 7px;
+   border-radius: 10px;
+   color: #fff;
+   font-size: 22px;
+ }
+ 
+ .movie-card .bookmark {
+   background: #000;
+   left: 15px;
+   font-size: 22px;
+ }
+ 
+ .movie-card .rating {
+   display:flex;
+   right: 15px;
+   background: #000;
+ }
+ 
+ .movie-card .rating span {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 7000;
+   margin-left: 5px;
+ }
+ 
+ .movie-card i{
+   font-size: 20px;
+   display: block;
+   color: #fff;
+ }
+ 
+ .movie-card .play i{
+   position: absolute;
+   font-size: 56px;
+   top:  50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ 
+ .movie-card .play{
+   font-size: 60px;
+ }
+ 
+ .card-title {
+   font-size: 19px;
+   font-weight: 700;
+   margin-bottom: 5px;
+   width: 150px;
+ }
+ 
+ .card-info {
+   display: flex;
+   font-size: 16px;
+   font-weight: 5000;
+   display: block;
+ }
+ 
+ .genre { 
+  margin-right: 8px; 
+ }
+ 
+ 
+ .error{
+     width: 95vw;
+     height: 100px;
+     /* background-color: #1783db; */
+     text-align: center;
+     font-size: 30px;
+ }
+ 
+ .error h3{
+     margin-top: 30px;
+ }
+
+/* primera seccion de reproduccion */
+
 .conte_section{
     min-height: 40.62em;
     font-size: 16px;
@@ -65,7 +267,7 @@ header .titulo:hover{
     background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/img_pagina.jpg);
     background-size: cover;
     background-position: center center;
-    padding-top: 52px;
+    padding-top: 17%;
     display: flex;
     align-items: center;
 }
@@ -603,3 +805,4 @@ footer{
     margin-top: 10px;
     max-width: 140px;
 }
+
