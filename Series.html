@@ -16,16 +16,27 @@
 		   <h1 class="titulo">Espacio Virtual</h1>
   
 		  <div class="nav">
-		  <a href="index.html">inicio</a>
-		  <a href="Peliculas.html">peliculas</a>
-		  <!-- <a href="Series.html">series</a> -->
-		  <a href="">libros</a>
+		  <a href="index.html">Inicio</a>
+		  <a href="Peliculas.html">Peliculas</a>
+		  <a href="">Libros</a>
 		 </div>
 		</div>
 	  </header>
+
+	  <div class="menu">
+		<ul>
+			<li class="todos active"><a href="#" class="btn-menu" data-filter="todos">Todos</a></li>
+			<li class="accion"><a href="#" class="btn-menu" data-filter="accion">Accion</a></li>
+			<li class="ficcion"><a href="#" class="btn-menu" data-filter="ficcion">Ficcion</a></li>
+			<li class="drama"><a href="#" class="btn-menu" data-filter="drama">Drama</a></li>
+			<li class="terror"><a href="#" class="btn-menu" data-filter="terror">terror</a></li>	
+		</ul>
+	</div>
+
+
 	<main class="main">
 
-        <div class="pelicula-principal">
+        <div class="pelicula-principal box-img accion drama">
 			<div class="contenedor">
 				<h3 class="titulo">Vikingos</h3>
 				<p class="descripcion">
@@ -36,7 +47,7 @@
 			</div>
 		</div>
 
-        <div class="pelicula-principal casaPapel">
+        <div class="pelicula-principal casaPapel box-img accion drama">
 			<div class="contenedor">
 				<div class="headerPeliculas">
 					<h3 class="titulo">Casa de papel</h3>
@@ -49,7 +60,7 @@
 			</div>
 		</div>
 
-        <div class="pelicula-principal strangerThings">
+        <div class="pelicula-principal strangerThings box-img ficcion terror">
 			<div class="contenedor">
 				<div class="headerStranger">
 					<h3 class="titulo">Stranger Things</h3>
@@ -62,7 +73,7 @@
 			</div>
 		</div>
 
-        <div class="pelicula-principal peakyBlinders">
+        <div class="pelicula-principal peakyBlinders box-img accion drama">
 			<div class="contenedor">
 				<h3 class="titulo">Peaky Blinders</h3>
 				<p class="descripcion">
@@ -73,7 +84,7 @@
 			</div>
 		</div>
 
-        <div class="pelicula-principal losBridgerton">
+        <div class="pelicula-principal losBridgerton box-img drama">
 			<div class="contenedor">
 				<h3 class="titulo">Los Bridgerton</h3>
 				<p class="descripcion">
@@ -84,7 +95,7 @@
 			</div>
 		</div>
 
-        <div class="pelicula-principal Los100">
+        <div class="pelicula-principal Los100 box-img accion ficcion">
 			<div class="contenedor">
 				<div class="headerlos100">
 					<h3 class="titulo">Los 100</h3>
@@ -97,7 +108,7 @@
 			</div>
 		</div>
 
-        <div class="pelicula-principal Eljuegodelcalamar">
+        <div class="pelicula-principal Eljuegodelcalamar box-img accion ficcion drama terror">
 			<div class="contenedor">
 				<h3 class="titulo">El juego del calamar</h3>
 				<p class="descripcion">
@@ -108,7 +119,7 @@
 			</div>
 		</div>
 
-        <div class="pelicula-principal BojackHorseman">
+        <div class="pelicula-principal BojackHorseman box-img ficcion">
 			<div class="contenedor">
 				<div class="headerBojackHorseman">
 					<h3 class="titulo">Bojack Horseman</h3>
@@ -121,7 +132,7 @@
 			</div>
 		</div>
 
-        <div class="pelicula-principal Dark">
+        <div class="pelicula-principal Dark box-img ficcion drama">
 			<div class="contenedor">
 				<div class="headerDark">
 					<h3 class="titulo">Dark</h3>
@@ -188,6 +199,8 @@
 
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="js/js1.js"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/filtro.js"></script>
 	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 
 </body>

@@ -1,14 +1,14 @@
 const peliculas = [  
   {
       nombre: "Vikingos",
-      genero: "Acción/drama",
+      genero: "Accion/drama",
       img: "./img/Vikingos.png",
       año: "2013",
       trailer: "https://www.youtube.com/watch?v=ah1B1eZfvz0",
   },
   {
       nombre: "Casa de papel",
-      genero: "Drama/Crimen",
+      genero: "Drama/Crimen/Accion",
       img: "./img/casaPapel.jpg",
       año: "2017",
       trailer: "https://www.youtube.com/watch?v=3y-6iaveY6c",
@@ -23,7 +23,7 @@ const peliculas = [
   },
   {
       nombre: "Peaky Blinders",
-      genero: "Crimen/Drama",
+      genero: "Crimen/Drama/Accion",
       img: "./img/peakyBlinders.jpg",
       año: "2013",
       trailer: "https://www.youtube.com/watch?v=ZHZG6UArE3I",
@@ -37,14 +37,14 @@ const peliculas = [
   },
   {
       nombre: "Los 100",
-      genero: "Ciencias Ficcion/Drama",
+      genero: "Ciencias Ficcion/Drama /Accion",
       img: "./img/los100.jpg",
       año: "2014",
       trailer: "https://www.youtube.com/watch?v=2NUnsXkcX4E",
   },
   {
       nombre: "El juego del calamar",
-      genero: "Supervivencia",
+      genero: "Supervivencia/Accion",
       img: "./img/Eljuegodelcalamar.jpg",
       año: "2021",
       trailer: "https://www.youtube.com/watch?v=LkXmoLsDsbU",
@@ -63,7 +63,7 @@ const peliculas = [
   año: "2017",
   trailer: "https://www.youtube.com/watch?v=z2wPBG-GSJ0",
 },
-///
+//!Peliculas
 {
   nombre: "End Game",
   genero: "Acción/Fantasía",
