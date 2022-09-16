@@ -130,33 +130,29 @@ header .titulo:hover{
 }
 
 .movies{
-    height: 50vh; 
-    width: 100%;
-    /* margin-left: 22px;
-    transform: translateY(60%); */
-    margin-left: 8px;
-    transform: translateY(40%);
+    width: 95%;
+    height: 100%;
+    /* background-color: #1783db; */
+    transform: translateY(30%);
+    margin-left: 2%;
     color: #fff;
- }
+}
  
  .movies-grid {
    display: grid;
+   width: 100%;
  /* Esta palabra clave nos ayuda a decirle al navegador que inserte el número de columnas o filas que sea necesario para rellenar el espacio.  */
-   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-   gap: 30px;
- }
+   grid-template-columns: repeat(6, 1fr);
+}
  
- .movie-card {
-   --scale: 0.8;
-   
-   cursor: pointer;
- }
  
  .movie-card .card-head {
    position: relative;
-   height: 220px;
+   height: 200px;
+   width: 75%;
+   margin-left: 10%;
+   margin-bottom: 10%;
    border-radius: 15px;
-   margin-bottom: 19%;
    overflow: hidden;
  }
  
@@ -232,33 +228,34 @@ header .titulo:hover{
  .card-title {
    font-size: 19px;
    font-weight: 700;
-   margin-bottom: 5px;
+   margin-bottom: 10px;
    width: 150px;
+   margin-left: 10%;
  }
  
  .card-info {
-   display: flex;
    font-size: 16px;
    font-weight: 5000;
    display: block;
- }
+   margin-left: 10%;
+   margin-bottom: 10%;
+ } 
  
- .genre { 
-  margin-right: 8px; 
- }
- 
- 
- .error{
+.error{
      width: 95vw;
      height: 100px;
-     /* background-color: #1783db; */
      text-align: center;
      font-size: 30px;
- }
+}
+
+.error i{
+    font-size: 56px;
+    color: #fff;
+}
  
- .error h3{
-     margin-top: 30px;
- }
+.error h3{
+     margin-top: 10px;
+}
 
 /* primera seccion de reproduccion */
 
